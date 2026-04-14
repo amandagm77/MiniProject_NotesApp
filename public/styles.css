@@ -1,0 +1,150 @@
+html{
+    background-image: url("Background.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    /*background-position:center center;*/
+}
+
+body {
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3e3186d7;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+#search {
+    width: 80%;
+    padding: 5px;
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+main {
+    padding: 20px;
+    padding-bottom: 80px; /* ⬅️ space for footer */
+}
+
+#note-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: white ;
+    gap: 10px;
+    align-items: flex-start; /* prevents stretching weirdness */
+}
+
+
+#add-note {
+    position: fixed;
+    bottom: 80px; /* ⬅️ moved ABOVE footer */
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-note:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #3e3186d7;
+    text-align: center;
+    color:white;
+    padding: 3px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    #search {
+        width: 90%;
+    }
+
+    #note-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.note {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    color: black;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 400px;
+    max-height: 200px;
+    overflow-y: auto;
+
+    /* ✅ NEW FIXES */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+
+h1{
+    color:#ffffff;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.note p {
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+/* Hidden by default */
+#note-form.hidden {
+    display: none;
+}
+/* Overlay background */
+#note-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form box */
+.form-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-content input,
+.form-content textarea {
+    padding: 8px;
+    font-size: 14px;
+}
