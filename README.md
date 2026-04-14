@@ -32,10 +32,10 @@ Then open: http://localhost:5000
 ## 📸 Screenshots
 
 ### Main View
-![Main](./assets/screenshotmain.png)
+![App Screenshot](https://raw.githubusercontent.com/amandagm77/MiniProject_NotesApp/main/assets/screenshotmain.PNG)
 
 ### Add Note Modal
-![Modal](./assets/screenshotmodal.png)
+![App Screenshot](https://raw.githubusercontent.com/amandagm77/MiniProject_NotesApp/main/assets/screenshotmodal.PNG)
 
 ---
 
@@ -165,7 +165,7 @@ npm test
 
 Tested API endpoints using Thunder Client in VS Code.
 
-![App Screenshot](./assets/screenshotthunderclient.png)
+![App Screenshot](https://raw.githubusercontent.com/amandagm77/MiniProject_NotesApp/main/assets/screenshotthunderclient.PNG)
 
 ---
 
