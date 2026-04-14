@@ -32,10 +32,10 @@ Then open: http://localhost:5000
 ## 📸 Screenshots
 
 ### Main View
-![App Screenshot](assets/screenshotmain.png)
+![App Screenshot](assets/screenshotmain.PNG)
 
 ### Add Note Modal
-![App Screenshot](assets/screenshotmodal.png)
+![App Screenshot](assets/screenshotmodal.PNG)
 
 ---
 
@@ -165,7 +165,7 @@ npm test
 
 Tested API endpoints using Thunder Client in VS Code.
 
-![App Screenshot](assets/screenshotthunderclient.png)
+![App Screenshot](assets/screenshotthunderclient.PNG)
 
 ---
 
