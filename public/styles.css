@@ -209,3 +209,19 @@ h2 {
         bottom: 90px;
     }
 }
+#bg {
+    position: fixed;
+    inset: 0;
+    background-image: url("Background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+#bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
