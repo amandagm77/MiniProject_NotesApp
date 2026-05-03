@@ -1,17 +1,42 @@
-html{
-    background-image: url("Background.jpg");
-    background-size: cover;
-    background-repeat:no-repeat;
-    /*background-position:center center;*/
-}
-
-body {
-    
-    font-family: Arial, sans-serif;
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("Background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll; /* safer for mobile */
+    min-height: 100vh;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.25);
+    z-index: -1;
+}
+@media (max-width: 600px) {
+    #note-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
+    .note {
+        max-width: 90%;
+    }
+
+    #add-note {
+        right: 15px;
+        bottom: 90px;
+    }
+}
 header {
     background-color: #3e3186d7;
     padding: 10px;
